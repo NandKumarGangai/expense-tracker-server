@@ -1,0 +1,36 @@
+{
+  "name": "expense-tracker-backend",
+  "version": "1.0.0",
+  "description": "expense-tracker-backend",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server",
+    "dev": "nodemon server",
+    "client": "npm start --prefix client",
+    "build:client": "npm run build --prefix client",
+    "start:dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "concurrently \"npm run server\" \"npm run build:client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NandKumarGangai/expense-tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NandKumarGangai/expense-tracker/issues"
+  },
+  "homepage": "https://github.com/NandKumarGangai/expense-tracker#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.1.0",
+    "mongoose": "^5.9.18",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

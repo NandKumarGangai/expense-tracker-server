@@ -1,4 +1,4 @@
-# expense-tracker-server
+# Expanse Tracker App
 
 Tech Stack Used:<br>
 <ul>
